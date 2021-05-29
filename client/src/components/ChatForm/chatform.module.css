@@ -1,0 +1,43 @@
+.chatFormContainer p {
+  color: #3a405a;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.chatForm {
+  display: flex;
+  gap: 0.5rem;
+
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.chatFormInput {
+  width: 75%;
+
+  font-size: 1rem;
+  padding: 0.5rem;
+
+  border-radius: 0.3rem;
+  border: 2px solid #3a405a;
+  color: #3a405a;
+}
+
+.chatFormSubmit {
+  width: 25%;
+  padding: 0.5rem;
+
+  border-radius: 0.3rem;
+  border: 2px solid #3a405a;
+  background: #3a405a;
+  color: white;
+
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: opacity 200ms;
+}
+
+.chatFormSubmit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
