@@ -1,7 +1,7 @@
 import * as React from "react";
-import { socket } from "./lib/socket";
-import { Chat } from "./components/Chat/Chat";
-import { Context } from "./lib/context";
+import { socket } from "@lib/socket";
+import { Chat } from "@components/Chat/Chat";
+import { Context } from "@lib/context";
 
 function App() {
   const [username, setUsername] = React.useState<string | null>("");

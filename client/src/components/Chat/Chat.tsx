@@ -3,8 +3,8 @@ import classes from "./chat.module.css";
 import { ChatMessage } from "../ChatMessage/ChatMessage";
 import { ChatForm } from "../ChatForm/ChatForm";
 import { Message } from "../../interfaces/Message";
-import { socket } from "../../lib/socket";
-import { useContext } from "../../lib/context";
+import { socket } from "@lib/socket";
+import { useContext } from "@lib/context";
 
 export const Chat = () => {
   const [messages, setMessages] = React.useState<Message[]>([]);

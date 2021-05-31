@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Message } from "../interfaces/Message";
 
 interface ContextType {
   username: string | null;

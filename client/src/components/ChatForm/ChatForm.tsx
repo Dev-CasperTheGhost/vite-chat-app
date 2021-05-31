@@ -1,12 +1,18 @@
 import * as React from "react";
-import { useContext } from "../../lib/context";
-import { socket } from "../../lib/socket";
+import { useContext } from "@lib/context";
+import { socket } from "@lib/socket";
 import classes from "./chatform.module.css";
 
 export const ChatForm = () => {
   const inputRef = React.useRef<HTMLInputElement>(null);
   const [message, setMessage] = React.useState("");
   const { username } = useContext();
+
+  React.useEffect(() => {
+    if (username && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [username]);
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault();

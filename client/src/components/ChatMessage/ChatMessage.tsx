@@ -2,7 +2,7 @@ import * as React from "react";
 import format from "date-fns/format";
 import { Message } from "../../interfaces/Message";
 import classes from "./chat-message.module.css";
-import { useContext } from "../../lib/context";
+import { useContext } from "@lib/context";
 
 interface Props {
   message: Message;
